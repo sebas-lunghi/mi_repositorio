@@ -9,7 +9,7 @@ $colorsecundario: #4f4f4d;
 $colorterciario: black;
 
 body {
-    background-image: url(../imagenes/background1.jpg); 
+    background-image: url(../imagenes/background2.jpg); 
     background-size: cover;
     max-width: 100%;
     overflow-x: hidden;
@@ -68,7 +68,26 @@ header {
       background-color: $colorterciario;
       padding: 50px;
       margin-top: 50px;
-  }
+
+      ul {
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        column-gap: 50px;
+        justify-content: center;
+
+        a:hover {
+            color: $colorprimario;
+            padding-bottom: 10px;
+            border-bottom: 5px solid;
+            border-bottom-style: solid;
+            transition: 0.5s;
+        }
+         }
+    }
+
+
+
 
 .descripciones {
     background-color: rgba(255, 255, 255, 0.527);
@@ -78,14 +97,19 @@ header {
     font-size: 20px;
     padding-left: 20px;
     padding-right: 20px;
+    border-bottom-left-radius: 10px ;
+    border-top-left-radius: 10px ;
 }
 
 .titulos {
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
-    background-color: black;
+    background-color: $colorterciario;
     color: $colorprimario;
     padding-left: 20px;
+    border-top-left-radius: 10px ;
+    margin-left: -20px;
+    margin-right: -100px;
 }
 
 #foto1 {
@@ -100,16 +124,27 @@ header {
     margin-right: 100px;
 }
 
+.bordefotos {
+    border-top-right-radius: 10px ;
+    border-bottom-right-radius: 10px ;
+}
 
 .header__links
     {
-        ;
         display: flex;
         flex-direction: row;
         padding: 20px;
         column-gap: 50px;
         list-style: none;
         text-transform: uppercase;
+
+        a:hover {
+            color: white;
+            padding-bottom: 15px;
+            border-bottom: 5px solid;
+            border-bottom-style: solid;
+            transition: 0.5s;
+        }        
 }
 
 .index {
@@ -118,14 +153,32 @@ header {
     color: white;
 }
 
+
+
 .fa-facebook {
-    color: white !important;
+    color: $colorprimario !important;
+    font-size: 50px;
+     
 }
 
 .fa-whatsapp {
-    color: white !important;
+    color: $colorprimario !important;
+    font-size: 50px;
+    
 }
 
 .fa-instagram {
-    color: white !important;
+    color: $colorprimario !important;
+    font-size: 50px;
 }
+.separador {
+    color: #56c5f42c;
+    font-size: 35px;
+    
+}
+
+
+ul {
+    list-style: none;
+}
+

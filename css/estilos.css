@@ -4,7 +4,7 @@
   overflow: 0; }
 
 body {
-  background-image: url(../imagenes/background1.jpg);
+  background-image: url(../imagenes/background2.jpg);
   background-size: cover;
   max-width: 100%;
   overflow-x: hidden; }
@@ -50,6 +50,18 @@ footer {
   background-color: black;
   padding: 50px;
   margin-top: 50px; }
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    column-gap: 50px;
+    justify-content: center; }
+    footer ul a:hover {
+      color: #56c5f4;
+      padding-bottom: 10px;
+      border-bottom: 5px solid;
+      border-bottom-style: solid;
+      transition: 0.5s; }
 
 .descripciones {
   background-color: rgba(255, 255, 255, 0.527);
@@ -58,14 +70,19 @@ footer {
   font-family: 'Nunito', sans-serif;
   font-size: 20px;
   padding-left: 20px;
-  padding-right: 20px; }
+  padding-right: 20px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px; }
 
 .titulos {
   font-family: 'Nunito', sans-serif;
   font-size: 20px;
   background-color: black;
   color: #56c5f4;
-  padding-left: 20px; }
+  padding-left: 20px;
+  border-top-left-radius: 10px;
+  margin-left: -20px;
+  margin-right: -100px; }
 
 #foto1 {
   margin-right: 100px; }
@@ -76,6 +93,10 @@ footer {
 #foto3 {
   margin-right: 100px; }
 
+.bordefotos {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px; }
+
 .header__links {
   display: flex;
   flex-direction: row;
@@ -83,6 +104,12 @@ footer {
   column-gap: 50px;
   list-style: none;
   text-transform: uppercase; }
+  .header__links a:hover {
+    color: white;
+    padding-bottom: 15px;
+    border-bottom: 5px solid;
+    border-bottom-style: solid;
+    transition: 0.5s; }
 
 .index {
   text-decoration: none;
@@ -90,10 +117,20 @@ footer {
   color: white; }
 
 .fa-facebook {
-  color: white !important; }
+  color: #56c5f4 !important;
+  font-size: 50px; }
 
 .fa-whatsapp {
-  color: white !important; }
+  color: #56c5f4 !important;
+  font-size: 50px; }
 
 .fa-instagram {
-  color: white !important; }
+  color: #56c5f4 !important;
+  font-size: 50px; }
+
+.separador {
+  color: #56c5f42c;
+  font-size: 35px; }
+
+ul {
+  list-style: none; }
