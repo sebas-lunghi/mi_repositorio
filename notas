@@ -136,3 +136,33 @@ logo {
     transform: scale(1.5);
   }
 }
+
+
+/*MEDIA QUERYS*/
+@media (max-width: 800px) {
+  p {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 100;
+    padding: 10px; }
+  main {
+    padding: 10px;
+    text-align: justify; }
+  menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -80px;
+    margin-top: 40px; }
+  footer ul {
+    display: inline; } }
+
+@media (min-width: 801px) {
+  p {
+    font-size: 20px;
+    columns: 2; }
+  menu {
+    float: right; } }
+
+
+<li><a class="colormenu" href="index.html"> Home</li></a>

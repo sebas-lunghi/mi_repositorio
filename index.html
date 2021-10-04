@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <meta name="description" content="Somos una empresa de limpieza, pintura y consorcios de edificios en La Plata">
     <meta name="keywords" content="servicios de limpieza, pintura, consorcios de edificios, mantenimiento, administracion">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="./css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,56 +18,61 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
 
-
-
     <title>Grupo Guialt S.A. - Empresa de servicios de limpieza y mantenimiento</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container_index">
         <header class="header">
-            <center><img src="../imagenes/logo2.png" height="150px" alt="Logo"></center>
+            <img class="logo" src="../imagenes/logo2.png" height="150px" alt="Logo">
 
             <!--Menu-->
-            <menu class="header__menu">
+            <nav>
                 <ul class="header__links">
                     <li><a href="#anclahome" class="index"> Home</li></a>
                   <li><a href="#anclaservicios" class="index"> Servicios</li></a>
-                  <li><a href="#anclacontacto" class="index"> Contacto</li></a>
+                  <li><a href="./pages/contacto.html" class="index"> Contacto</li></a>
                 </ul>
-              </menu>
+            </nav>
                 
             </header>
 
             <!--Servicios-->
         
-                <main id="intro">~ Somos una empresa que ofrece servicios limpieza eficiente y mantenimiento para tu negocio o edificio. Nuestro servicio garantiza espacios limpios y seguros. Nos adaptamos al horario de conveniencia del cliente y nos encargamos de la contratación y manejo del personal, asegurando una constante prestación del servicio. Pedinos tu presupuesto, tenemos un plan acorde a tu negocio. ~</main>
+                <main id="intro">~ Somos una empresa que ofrece servicios limpieza eficiente y mantenimiento para tu negocio o edificio. Nuestro servicio garantiza espacios limpios y seguros. Nos adaptamos al horario de conveniencia del cliente y nos encargamos de la contratación y manejo del personal, asegurando una constante prestación del servicio. Pedinos tu presupuesto, tenemos un plan acorde a tu negocio. 
+                    Si quiere saber mas de nuestro trabajo puede ingresar a <a href="#anclacontacto">nuestras redes </a> ~</main>
 
                 <div id="text1" class="descripciones">
-                    <p class="titulos">Servicios de limpieza</p>
+                    <a href="./pages/limpieza.html" class="decoration"><p class="titulos" id="anclaservicios" >Servicios de limpieza</p></a>
                     <br>
                     <p>Garantizamos espacios limpios, seguros y eficientes. Nuestro personal se encuentra capacitado para brindarte el mejor servicio, escribinos para saber más.</p>
                 </div>
-                <div id="foto1" > <img class="bordefotos" src="../imagenes/limpiezanuevo4.jpg" alt="limpieza" width="80%">
+                <div id="foto1" > <img class="bordefotos" src="../imagenes/limpiezanuevo3.jpg" alt="limpieza" width="80%">
+                </div>
+                <div id="foto_a" > <img src="../imagenes/limpiezanuevo5.jpg" alt="limpieza" width="100%">
                 </div>
 
                 <div id="text2" class="descripciones">
-                    <p class="titulos">Pintura e impermeabilización</p>
+                    <a href="./pages/pintura.html" class="decoration"><p class="titulos">Pintura e impermeabilización</p></a>
                     <br>
                     <p>Te ofrecemos una solución al momento de renovar el color de tus paredes. Contamos con servicio de impermeabilización y pintura en general, en casas, departamentos y edificios con materiales de calidad.</p>
                 </div>
                 <div id="foto2"> <img class="bordefotos" src="../imagenes/pinturanuevo3.jpg" alt="pintura" width="80%">
                 </div>
+                <div id="foto_b" > <img src="../imagenes/pinturanuevo5.jpg" alt="limpieza" width="100%">
+                </div>
 
                 <div id="text3"class="descripciones">
-                    <p class="titulos">Administración de consorcios</p>
+                    <a href="./pages/consorcio.html" class="decoration"><p class="titulos">Administración de consorcios</p></a>
                     <br>
                     <p>Entre nuestros clientes se encuentran torres y complejos con amenities como asi también edificios pequeños de viviendas o comerciales. Todos los clientes  pueden ver su liquidación de expensas y ver los reclamos de su unidad.</p>
                 </div>
                 <div id="foto3"> <img class="bordefotos" src="../imagenes/oficina3.jpg" alt="consorcios" width="80%">
                 </div>
+                <div id="foto_c" > <img src="../imagenes/oficina5.jpg" alt="limpieza" width="100%">
+                </div>
                 
                 <!--Footer-->
-                <footer> 
+                <footer > 
                     <ul>
                         <li><a href="https://www.facebook.com/GrupoGuialt.limpieza/" ><i class="fab fa-transform fa-facebook"></i></a></li>
 
@@ -77,13 +82,15 @@
                         <li class="separador" >•</li>
                         <li><a href="https://api.whatsapp.com/send/?phone=5492216757305&text&app_absent=0"><i class="fab fa-whatsapp"> </i></a></li>
                       </ul>
-                    
-              
+                      <div id="anclacontacto" class="datos">
+                        grupoguialtsrl@gmail.com <br> 
+                        tel: (221) 675-7305<br>
+                        Calle 11 1663 | La Plata, BsAs
+                      </div>
                 </footer>
-            </menu>
         </header>
     </div>
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg></script>
 </body>
-<script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg></script>
 
 </html>
