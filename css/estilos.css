@@ -13,12 +13,7 @@ body {
   grid-gap: 20px;
   grid-template-columns: 2 1fr, auto;
   grid-template-rows: 6 1fr, auto;
-  grid-template-areas: "header header"
- "intro intro"
- "text1 foto1"
- "text2 foto2"
- "text3 foto3"
- "pie pie";
+  grid-template-areas: "header header" "intro intro" "text1 foto1" "text2 foto2" "text3 foto3" "pie pie";
   column-gap: 10px; }
   @media (max-width: 800px) {
     .container_index {
@@ -26,15 +21,7 @@ body {
       grid-gap: 20px;
       grid-template-columns: 1 1fr, auto;
       grid-template-rows: 9 1fr, auto;
-      grid-template-areas: "header"
- "intro"
- "text1"
- "foto_a"
- "text2"
- "foto_b"
- "text3"
- "foto_c"
- "pie";
+      grid-template-areas: "header" "intro" "text1" "foto_a" "text2" "foto_b" "text3" "foto_c" "pie";
       overflow-x: hidden; } }
 
 header {
@@ -274,10 +261,7 @@ ul {
   grid-gap: 20px;
   grid-template-columns: 1 1fr, auto;
   grid-template-rows: 4 1fr, auto;
-  grid-template-areas: "header"
- "intro"
- "video1"
- "pie";
+  grid-template-areas: "header" "intro" "video1" "pie";
   column-gap: 10px; }
 
 .container_contacto {
@@ -285,11 +269,7 @@ ul {
   grid-gap: 20px;
   grid-template-columns: 1 1fr, auto;
   grid-template-rows: 4 1fr, auto;
-  grid-template-areas: "header"
- "intro"
- "formulario"
- "gif"
- "pie";
+  grid-template-areas: "header" "intro" "formulario" "gif" "pie";
   column-gap: 25px;
   overflow-x: hidden; }
 
